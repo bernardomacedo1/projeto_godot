@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjcli11iltcl6"]
+
+[ext_resource type="Texture2D" uid="uid://dhr48fe4sh0g8" path="res://sprites/background.png" id="1_3c6ml"]
+[ext_resource type="Texture2D" uid="uid://1tsylubo8ewl" path="res://sprites/ship.png" id="2_ku5bq"]
+
+[node name="Game" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="CharacterBody2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(77, 144)
+texture = ExtResource("1_3c6ml")
+
+[node name="Ship" type="Sprite2D" parent="."]
+position = Vector2(80, 260)
+texture = ExtResource("2_ku5bq")
+hframes = 2

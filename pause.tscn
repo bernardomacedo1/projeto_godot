@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0ivhk1crhgbk"]
+
+[ext_resource type="Script" path="res://pause.gd" id="1_kya3j"]
+[ext_resource type="Texture2D" uid="uid://by622ckpxu4y1" path="res://Assets_aula1/Assets_aula1/Coletavel/yGeizi.png" id="2_2xtje"]
+[ext_resource type="Texture2D" uid="uid://vydl80exasyv" path="res://Assets_aula1/Assets_aula1/botoes/64px/Close_64.png" id="3_xmbrn"]
+[ext_resource type="Texture2D" uid="uid://bebfn1dypq0ks" path="res://Assets_aula1/Assets_aula1/botoes/64px/Restart_64.png" id="4_4nlwb"]
+[ext_resource type="Texture2D" uid="uid://dv37qkd7uce1y" path="res://Assets_aula1/Assets_aula1/botoes/64px/Back_64.png" id="5_rwv4m"]
+
+[node name="pause" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_kya3j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(579.5, 321)
+scale = Vector2(3.67937, 2.752)
+texture = ExtResource("2_2xtje")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = -112.0
+offset_right = 38.0
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+
+[node name="bt_sair" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_xmbrn")
+flat = true
+
+[node name="bt_restart" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("4_4nlwb")
+flat = true
+
+[node name="bt_voltar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "
+"
+icon = ExtResource("5_rwv4m")
+flat = true
+
+[connection signal="pressed" from="VBoxContainer/bt_sair" to="." method="_on_bt_sair_pressed"]
+[connection signal="pressed" from="VBoxContainer/bt_restart" to="." method="_on_bt_restart_pressed"]
+[connection signal="pressed" from="VBoxContainer/bt_voltar" to="." method="_on_bt_voltar_pressed"]

@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://cp4fyvvejyivh"]
+
+[ext_resource type="Script" path="res://game_over.gd" id="1_l42af"]
+[ext_resource type="Texture2D" uid="uid://fk0cgiw262i8" path="res://Assets_aula1/Assets_aula1/game_over/game_over.png" id="1_tokf0"]
+[ext_resource type="Texture2D" uid="uid://bebfn1dypq0ks" path="res://Assets_aula1/Assets_aula1/botoes/64px/Restart_64.png" id="2_c68p7"]
+[ext_resource type="Texture2D" uid="uid://vydl80exasyv" path="res://Assets_aula1/Assets_aula1/botoes/64px/Close_64.png" id="3_vmu5h"]
+
+[node name="game_over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l42af")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 5.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.180005, 0.180005, 0.180005, 1)
+
+[node name="game_over_title" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 404.0
+offset_top = 289.0
+offset_right = 572.0
+offset_bottom = 329.0
+texture = ExtResource("1_tokf0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="restart_but" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+icon = ExtResource("2_c68p7")
+
+[node name="quit_but2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_vmu5h")
+
+[connection signal="pressed" from="VBoxContainer/restart_but" to="." method="_on_restart_but_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit_but2" to="." method="_on_quit_but_2_pressed"]

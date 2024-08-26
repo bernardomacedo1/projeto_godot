@@ -1,0 +1,99 @@
+[gd_scene load_steps=8 format=3 uid="uid://dmkr2bab86d30"]
+
+[ext_resource type="Texture2D" uid="uid://i3mj5wvm0sdj" path="res://sprites/asteroids/asteroid-1.png" id="1_lwvr6"]
+[ext_resource type="Texture2D" uid="uid://t4yx06y5yt4r" path="res://sprites/asteroids/asteroid-2.png" id="2_ses83"]
+[ext_resource type="Texture2D" uid="uid://dirdxtsy4gtju" path="res://sprites/asteroids/asteroid-3.png" id="3_ouxsg"]
+[ext_resource type="Texture2D" uid="uid://b3s63yvullmyq" path="res://sprites/asteroids/asteroid-4.png" id="4_sbnyr"]
+[ext_resource type="Texture2D" uid="uid://ctb28cc0hv08c" path="res://sprites/asteroids/asteroid-5.png" id="5_qdsfw"]
+[ext_resource type="Texture2D" uid="uid://b52yseyfc38ts" path="res://sprites/planet.png" id="6_6it1g"]
+[ext_resource type="Texture2D" uid="uid://dhr48fe4sh0g8" path="res://sprites/background.png" id="7_a1ggb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(637, 1153)
+scale = Vector2(8, 8)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Ship" type="Sprite2D" parent="."]
+position = Vector2(101, 357)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Asteroid-1" type="Sprite2D" parent="."]
+position = Vector2(222, 147)
+texture = ExtResource("1_lwvr6")
+
+[node name="Asteroid-2" type="Sprite2D" parent="."]
+position = Vector2(327, 206)
+texture = ExtResource("2_ses83")
+
+[node name="Asteroid-3" type="Sprite2D" parent="."]
+position = Vector2(65, 131)
+texture = ExtResource("3_ouxsg")
+
+[node name="Asteroid-4" type="Sprite2D" parent="."]
+position = Vector2(325, 63)
+texture = ExtResource("4_sbnyr")
+
+[node name="Asteroid-5" type="Sprite2D" parent="."]
+position = Vector2(219, 41)
+texture = ExtResource("5_qdsfw")
+
+[node name="Asteroid-6" type="Sprite2D" parent="."]
+position = Vector2(122, 225)
+texture = ExtResource("2_ses83")
+
+[node name="Asteroid-7" type="Sprite2D" parent="."]
+position = Vector2(245, 318)
+texture = ExtResource("4_sbnyr")
+
+[node name="Asteroid-8" type="Sprite2D" parent="."]
+position = Vector2(43, 42)
+texture = ExtResource("5_qdsfw")
+
+[node name="Planet" type="Sprite2D" parent="."]
+position = Vector2(950, 345.5)
+scale = Vector2(1.96667, 1.925)
+texture = ExtResource("6_6it1g")
+
+[node name="Asteroid-9" type="Sprite2D" parent="."]
+position = Vector2(466, 572)
+texture = ExtResource("1_lwvr6")
+
+[node name="Asteroid-10" type="Sprite2D" parent="."]
+position = Vector2(599, 418)
+texture = ExtResource("2_ses83")
+
+[node name="Asteroid-11" type="Sprite2D" parent="."]
+position = Vector2(763, 158)
+texture = ExtResource("1_lwvr6")
+
+[node name="Asteroid-12" type="Sprite2D" parent="."]
+position = Vector2(612, 269)
+texture = ExtResource("2_ses83")
+
+[node name="Asteroid-13" type="Sprite2D" parent="."]
+position = Vector2(269, 486)
+texture = ExtResource("4_sbnyr")
+
+[node name="Asteroid-14" type="Sprite2D" parent="."]
+position = Vector2(821, 534)
+texture = ExtResource("5_qdsfw")
+
+[node name="Asteroid-15" type="Sprite2D" parent="."]
+position = Vector2(914, 138)
+texture = ExtResource("3_ouxsg")
+
+[node name="Asteroid-16" type="Sprite2D" parent="."]
+position = Vector2(675, 63)
+texture = ExtResource("4_sbnyr")
+
+[node name="Asteroid-17" type="Sprite2D" parent="."]
+position = Vector2(363, 604)
+texture = ExtResource("5_qdsfw")
+
+[node name="Background2" type="Sprite2D" parent="."]
+position = Vector2(1333, 537)
+texture = ExtResource("7_a1ggb")
